@@ -1,0 +1,21 @@
+{
+  "name": "he",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node rules/index.test.js",
+    "release": "standard-version",
+    "push": "npm run test && npm run release && git push --follow-tags origin master"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^16.2.1",
+    "stylelint-test-rule-node": "^0.2.1"
+  },
+  "dependencies": {
+    "postcss-value-parser": "^4.2.0"
+  }
+}
